@@ -1,10 +1,27 @@
 # POLIPHONE: A Dataset for Smartphone Model Identification from Audio Recordings
 
-Welcome to the GitHub repository for the paper *"POLIPHONE: A Dataset for Smartphone Model Identification from Audio Recordings."*
-  
-## Current Status ⚠️🚧
+This repository contains the implementation accompanying the paper *"POLIPHONE: A Dataset for Smartphone Model Identification from Audio Recordings."* 
+The toolkit enables impulse response analysis for smartphone audio characterization.  
 
-This repository is currently under construction. The code will be released soon. Stay tuned for updates!
+## Overview
+
+The repository provides MATLAB and Python implementations for:
+
+- **Sweep Signal Generation**: Tools for creating and inverting logarithmic sine sweeps used for excitation
+- **Impulse Response Extraction**: Methods to estimate linear and non-linear impulse responses from recorded sweeps
+- **Audio Characterization**: Algorithms for reverberation time estimation and device fingerprinting
+- **Analysis Utilities**: Signal processing pipelines for comparing recorded signals with reference audio
+
+The MATLAB implementation focuses on core signal processing routines, while the Python version includes additional analysis tools for practical device evaluation.
+
+
+## Usage - Basic Workflow
+
+1. Generate excitation signals (sweeps or noise)
+2. Record device responses to these signals
+3. Extract impulse responses
+4. Analyze device characteristics (T60, non-linearities, etc.)
+
 
 ## Citation
 
@@ -21,6 +38,10 @@ If you use this code in your research, please cite the following paper:
   doi={10.1109/ACCESS.2025.3545152}
 }
 ```
+
+## License
+
+The code is provided for non-commercial research purposes only. For commercial use, please contact the authors.
 
 ## Contact
 
